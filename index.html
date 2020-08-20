@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>STUDIO-K</title>
+</head>
+<body>
+    <div class="grovalNavigation">
+        <h2>STUDIO-K Blog</h2>
+    <aside id="sideberr">
+    <ul>
+        <li><a href="youtube.html">Youtube Blog</a></li>
+        <li><div class="show">メールでお問い合わせ</div></li>
+        <div id="coment">※もう一度押すと閉じます</div>
+        <div class="contact-form" >
+            <div class="form-title">お問い合わせ</div>
+        <form method="post" action="confirm.php">
+              <div class="form-item">名前</div>
+              <input type="text" name="name">
+              <div class="form-item">Email</div>
+              <input type="text" name="email">
+              <div class="form-item">内容</div>
+              <textarea name="body"></textarea>
+              <input type="submit" value="送信">
+        </form>
+        </div>
+        <li><a href="#">LINEでお問い合わせ</a></li>
+        <div class="dis">
+            <div class="box"><img src="line.jpg" alt=""></div></div>
+        <div id="coment">※もう一度押すと閉じます</div>
+        <li><a href="https://studiok.sakura.ne.jp">STUDIO-K HP</a></li>
+        <li><a href="https://studiok8.github.io/design/">デザイン集</a></li>
+        <li><a href="https://studiok8.github.io/retouch/">レタッチ集</a></li>
+        <li><a href="https://studiok8.github.io/cafedemo/">Cafe用HPサンプル</a></li>
+        <li><a href="https://studiok8.github.io/salondemo/">美容室用HPサンプル</a></li>
+        <li><a href="https://studiok8.github.io/companydemo/">Office用HPサンプル</a></li>
+     </div>
+    </ul>
+</aside>
+     <div class="content">
+         <h1>STUDIO-K</h1>
+         <h3>写真の加工・修正レタッチ</h3>
+         <p>自然な美肌修正・部分的に細くしたり全体的に体型修正・
+            メイクの書き足し・不要物除去（背景の隠したいものやほくろ、
+            シミなど）・SNSに投稿用の写真の加工・モノクロ写真に色を付けたい、写真をモノクロにしたい・服・髪の色を変えたいなどなどご希望の写真に仕上げます。</p>
+        <h3>写真のデザイン</h3>
+        <p>お好きな写真を複数合成・仕上げたいデザインなどご要望にお応えします。自分だけの写真やデザインを作ってみませんか。<br>ポスター作成・LP作成も承ります。
+        </p>
+         <h3>HP作成</h3>
+         <p>どんなHPにしたいのか用途は何か細かくヒアリングすることで希望通りのHPを作成します。
+             パステル系の可愛らしいHPを作るのが好きでアイコンなども盛りだくさんでCuteなHPをお作りいたします。
+             Photoshopでデザインした写真を使ってHP作成に使用することももちろん可能、SEO対策や問い合わせページも基本料金に含まれています。
+         </p>
+         <h3>※リンクのサンプルやデモHPをご覧ください</h3>
+    </div>
+     <div class="localNavigation">
+        <h2>プロフィール</h2>
+        <ul>
+            <li>名前:Retao</li>
+            <li>趣味・特技:PCで物作り、Photoshopで女の子をより可愛くすること。</li>
+            <li>住まい：東京都23区内</li>
+            <li>独学でPhotoshop、webデザイン、プログラミングをスタート。
+                まだまだ未熟者なので低価格にて提供させていただいております。
+                誰かの役に立てれば本望の精神でやらせていただいてますので何でもご相談ください。
+            </li>
+        </ul>  
+        <small>&copy;2020 STUDIO-K All rights reserved.</small>
+     </div>
+     
+<!---
+     <aside id="sideberr">
+        <div class="show" id="submit-btn">お問い合わせ</div>
+        <div id="coment">※もう一度押すと閉じます</div>
+        <div class="contact-form" >
+            <div class="form-title">お問い合わせ</div>
+        <form method="post" action="sent.php">
+              <div class="form-item">名前</div>
+              <input type="text" name="name">
+              <div class="form-item">Email</div>
+              <input type="text" name="email">
+              <div class="form-item">内容</div>
+              <textarea name="body"></textarea>
+              <input type="submit" value="送信">
+        </form>
+        </div>
+    </aside>-->
+    <script type="text/javascript" src="index.js">
+    $(function() {
+    $('.show').click(function(){
+    $('.contact-form').stop().fadeToggle(300);
+    $('#coment').stop().fadeToggle(300);
+  });
+});
+    </script>
+</body>
+</html>
